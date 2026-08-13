@@ -111,7 +111,7 @@ function showErr(msg) {
   document.getElementById('err-detail').textContent = msg || '';
   var vidcoreUrl = s
     ? 'https://vidcore.org/embed/tv/' + id + '/' + s + '/' + (e || '1')
-    : 'https://vidcore.org/embed/movie/tmdb/' + id;
+    : 'https://vidcore.org/embed/movie/' + id;
   document.getElementById('err-link').href = vidcoreUrl;
 }
 
