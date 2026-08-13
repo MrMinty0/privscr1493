@@ -70,7 +70,7 @@ video { width: 100%; height: 100%; display: block; }
 
 <div id="err">
   <div id="err-title">Error Occurred</div>
-  <a id="err-link" href="#">Try vidsrc.xyz instead?</a>
+  <a id="err-link" href="#">Try vidcore.org instead?</a>
   <div id="err-detail"></div>
 </div>
 
@@ -109,10 +109,10 @@ function showErr(msg) {
   document.getElementById('loader').style.display = 'none';
   document.getElementById('err').style.display = 'flex';
   document.getElementById('err-detail').textContent = msg || '';
-  var vidsrcUrl = s
-    ? 'https://vidsrc.xyz/embed/tv?tmdb=' + id + '&season=' + s + '&episode=' + (e || '1')
-    : 'https://vidsrc.xyz/embed/movie?tmdb=' + id;
-  document.getElementById('err-link').href = vidsrcUrl;
+  var vidcoreUrl = s
+    ? 'https://vidcore.org/embed/tv/tmdb/' + id + '/' + s + '/' + (e || '1')
+    : 'https://vidcore.org/embed/movie/tmdb/' + id;
+  document.getElementById('err-link').href = vidcoreUrl;
 }
 
 function loadBackdrop(id, isTv) {
